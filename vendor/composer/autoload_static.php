@@ -20,11 +20,27 @@ class ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\HttpFoundation\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/http-foundation',
+            ),
+        ),
+    );
+
+    public static $classMap = array (
+        'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f::$classMap;
 
         }, null, ClassLoader::class);
     }

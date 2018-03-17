@@ -3,5 +3,8 @@
         "psr-4":{
             "App\\":"app"
         }
+    },
+    "require": {
+        "symfony/http-foundation": "2.5.*"
     }
 }
