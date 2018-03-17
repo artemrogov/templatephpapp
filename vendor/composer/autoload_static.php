@@ -7,6 +7,15 @@ namespace Composer\Autoload;
 class ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Debug\\' => 24,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,6 +23,18 @@ class ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -23,6 +44,10 @@ class ComposerStaticInit266c5e2b6fb071d4b245dec79a653d4f
     public static $prefixesPsr0 = array (
         'S' => 
         array (
+            'Symfony\\Component\\HttpKernel\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/http-kernel',
+            ),
             'Symfony\\Component\\HttpFoundation\\' => 
             array (
                 0 => __DIR__ . '/..' . '/symfony/http-foundation',
