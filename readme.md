@@ -11,7 +11,6 @@ composer dump-autoload -o
 
 Обновление самого composer.phar до последней версии:
 
-``
+```
 composer self-update 
-
-``
+```
