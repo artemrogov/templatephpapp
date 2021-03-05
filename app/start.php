@@ -1,6 +1,6 @@
 <?php
-use App\Models\ExampleModel as Example;
+use App\Models\Application as App;
 require_once __DIR__.'/../vendor/autoload.php';
 
-$app = new Example();
+$app = new App();
 

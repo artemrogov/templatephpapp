@@ -4,7 +4,7 @@
 */
 namespace App\Models;
 
-class ExampleModel {
+class Application {
     
     public function __construct(){
         
